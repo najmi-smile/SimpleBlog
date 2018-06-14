@@ -1,0 +1,11 @@
+bin
+obj
+*.suo
+*.user
+*sln.docstates
+[Db]ebug/
+[Re]elease/
+*.obj
+*.pdb
+_ReSharer*
+Thumbs.db
