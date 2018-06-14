@@ -21,11 +21,12 @@ namespace SimpleBlog
             //    url: "{controller}/{action}/{id}",
             //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             //);
-            routes.MapRoute("Login","login", new {controller = "Login", action = "Login" });
+            routes.MapRoute("Login","login", new {controller = "Login", action = "Login" }, nameSpace);
             routes.MapRoute(
                 name: "Home", 
                 url: "{controller}/{action}",
-                defaults: new { controller = "Posts", action = "Index" }
+                defaults: new { controller = "Posts", action = "Index" },
+                namespaces: nameSpace
             );
         }
     }
